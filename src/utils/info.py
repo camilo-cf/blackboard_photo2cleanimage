@@ -2,26 +2,26 @@
 General information about the deployment
 """
 
-title = "Image API for cleaning blackboard pictures"
+TITLE = "Image API for cleaning blackboard pictures"
 
-description = """
+DESCRIPTION = """
 # API deployment of service of blackboard image to a clean B/W
 
 ## Test the API
 * Send the image and receive back a clean image
-* Use the API of sending in **JSON as an array** the image to clean
+* Use the API with a **JPG/JPEG/PNG image** so you will get back the B/W image
 """
-version = "0.0.1"
-contact = {
+VERSION = "0.0.1"
+CONTACT = {
     "name": "Camilo Cáceres",
     "url": "https://camilo-cf.github.io/",
     "email": "camilo.caceresf@gmail.com",
 }
-license_info = {
+LICENSE_INFO = {
     "name": "Apache 2.0",
-    "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
 }
-tags_metadata = [
+TAGS_METADATA = [
     {
         "name": "improve_image",
         "description": "Improve the blackboard image after crop its borders",

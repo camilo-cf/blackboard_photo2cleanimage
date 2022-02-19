@@ -8,7 +8,7 @@ from PIL import Image
 from skimage.exposure import equalize_adapthist
 from skimage.exposure import rescale_intensity
 from skimage.filters import threshold_local
-from skimage.restoration import denoise_bilateral
+# from skimage.restoration import denoise_bilateral
 
 from src.utils.constants import BLOCK_SIZE
 
