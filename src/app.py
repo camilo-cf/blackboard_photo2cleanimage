@@ -32,5 +32,6 @@ async def improve_image(file: UploadFile = File(...)):
             content=processing.execute(await file.read()), media_type="image/jpeg"
         )
 
-    except:
-        raise HTTPException(status_code=404, detail="Image must be jpg or png format!")
+    except BaseException:
+        raise HTTPException(status_code=404,
+                            detail="Image must be jpg or png format!")
