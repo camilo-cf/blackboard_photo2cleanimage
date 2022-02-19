@@ -50,10 +50,12 @@ class ImageProcessing:
         Returns:
             Denoised image.
         """
-        # Apply adaptive histogram equalization to improve the contrast along the image
+        # Apply adaptive histogram equalization to improve the contrast along
+        # the image
         proccessed_image = equalize_adapthist(image)
         # Intensity rescaling to improve the contrast
-        proccessed_image = rescale_intensity(proccessed_image, out_range=(0, 255))
+        proccessed_image = rescale_intensity(
+            proccessed_image, out_range=(0, 255))
         # Invert the image to white background
         proccessed_image = (proccessed_image - 255) * -1
         # Find the threshold value
