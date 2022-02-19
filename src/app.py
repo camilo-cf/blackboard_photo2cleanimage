@@ -15,6 +15,7 @@ app = FastAPI(
     openapi_tags=I.TAGS_METADATA,
 )
 
+
 @app.post(
     "/improve_image",
     response_model=OutputImage,
@@ -23,7 +24,9 @@ app = FastAPI(
 )
 async def improve_image(
     file: UploadFile = File(
-        ..., media_type="multipart/form-data", description="Image to improve in jpg, jpeg or png format" 
+        ...,
+        media_type="multipart/form-data",
+        description="Image to improve in jpg, jpeg or png format",
     )
 ):
     try:
