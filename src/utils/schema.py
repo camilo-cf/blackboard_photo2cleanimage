@@ -3,7 +3,6 @@
 """
 from pydantic import BaseModel
 
-
 class OutputImage(BaseModel):
     """
     Schema for the output.
