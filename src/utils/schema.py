@@ -1,7 +1,6 @@
 """
     Schema for the API.
 """
-  
 from pydantic import BaseModel, conlist
 from typing import List, Any
 
