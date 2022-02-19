@@ -1,4 +1,4 @@
-"""Utils package for blackboard_photo2cleanimage."""
+"""Top-level package for blackboard_photo2cleanimage."""
 
 __author__ = """Camilo Caceres F"""
 __email__ = 'camilo.caceres@gmail.com'
