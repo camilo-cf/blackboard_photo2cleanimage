@@ -15,7 +15,6 @@ VERSION = "0.0.1"
 CONTACT = {
     "name": "Camilo Cáceres",
     "url": "https://camilo-cf.github.io/",
-    "email": "camilo.caceresf@gmail.com",
 }
 LICENSE_INFO = {
     "name": "Apache 2.0",

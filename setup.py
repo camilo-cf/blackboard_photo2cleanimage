@@ -9,8 +9,7 @@ requirements = file_requirements.readlines()
 requirements = [line.replace("\n", "") for line in requirements] 
 
 setup(
-    author="Camilo Caceres F",
-    author_email='camilo.caceres@gmail.com',
+    author="Camilo Caceres F",    
     python_requires='>=3.8',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',

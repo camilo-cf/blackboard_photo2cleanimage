@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Camilo Caceres F <camilo.caceres@gmail.com>
+* Camilo Caceres F
 
 Contributors
 ------------
