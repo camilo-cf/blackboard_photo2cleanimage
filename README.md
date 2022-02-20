@@ -1,0 +1,7 @@
+[![Pylint](https://github.com/camilo-cf/blackboard_photo2cleanimage/actions/workflows/pylint.yml/badge.svg)](https://github.com/camilo-cf/blackboard_photo2cleanimage/actions/workflows/pylint.yml)
+[![Sphinx](https://github.com/camilo-cf/blackboard_photo2cleanimage/actions/workflows/sphinx_action.yml/badge.svg)](https://github.com/camilo-cf/blackboard_photo2cleanimage/actions/workflows/sphinx_action.yml)
+[![pages-build-deployment](https://github.com/camilo-cf/blackboard_photo2cleanimage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/camilo-cf/blackboard_photo2cleanimage/actions/workflows/pages/pages-build-deployment)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=camilo-cf_blackboard_photo2cleanimage&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=camilo-cf_blackboard_photo2cleanimage)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=camilo-cf_blackboard_photo2cleanimage&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=camilo-cf_blackboard_photo2cleanimage)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=camilo-cf_blackboard_photo2cleanimage&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=camilo-cf_blackboard_photo2cleanimage)
+[![Known Vulnerabilities](https://snyk.io/test/github/camilo-cf/blackboard_photo2cleanimage/badge.svg)](https://snyk.io/test/github/camilo-cf/blackboard_photo2cleanimage)
