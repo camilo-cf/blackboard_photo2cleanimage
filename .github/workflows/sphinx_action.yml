@@ -27,11 +27,6 @@ jobs:
         sphinx-apidoc -o . ../../src/.
         cd ..
         make html
-        
-    - name: Update resources
-      uses: test-room-7/action-update-file@v1
-      with:
-          file-path: |
-              /docs/
-          commit-msg: Update resources
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+        ls
+        pwd
+        git remote -v
