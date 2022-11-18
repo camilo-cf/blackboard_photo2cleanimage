@@ -14,7 +14,9 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -47,7 +49,10 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-src.app">src.app module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-src.app">src.app module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#src.app.improve_image"><code class="docutils literal notranslate"><span class="pre">improve_image()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#module-src">Module contents</a></li>
 </ul>
 </li>
@@ -69,9 +74,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="modules.html">src</a> &raquo;</li>
-      <li>src package</li>
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">src</a></li>
+      <li class="breadcrumb-item active">src package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/src.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -82,17 +87,32 @@
            <div itemprop="articleBody">
              
   <section id="src-package">
-<h1>src package<a class="headerlink" href="#src-package" title="Permalink to this headline"></a></h1>
+<h1>src package<a class="headerlink" href="#src-package" title="Permalink to this heading"></a></h1>
 <section id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline"></a></h2>
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="src.utils.html">src.utils package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="src.utils.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src.utils.html#module-src.utils.constants">src.utils.constants module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.utils.html#module-src.utils.image_processing">src.utils.image_processing module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.utils.html#module-src.utils.image_processing">src.utils.image_processing module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="src.utils.html#src.utils.image_processing.ImageProcessing"><code class="docutils literal notranslate"><span class="pre">ImageProcessing</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="src.utils.html#src.utils.image_processing.ImageProcessing.denoise"><code class="docutils literal notranslate"><span class="pre">ImageProcessing.denoise()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.utils.html#src.utils.image_processing.ImageProcessing.execute"><code class="docutils literal notranslate"><span class="pre">ImageProcessing.execute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.utils.html#src.utils.image_processing.ImageProcessing.image_to_bytes"><code class="docutils literal notranslate"><span class="pre">ImageProcessing.image_to_bytes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.utils.html#src.utils.image_processing.ImageProcessing.read_imagefile"><code class="docutils literal notranslate"><span class="pre">ImageProcessing.read_imagefile()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="src.utils.html#module-src.utils.info">src.utils.info module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.utils.html#module-src.utils.schema">src.utils.schema module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.utils.html#module-src.utils.schema">src.utils.schema module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="src.utils.html#src.utils.schema.OutputImage"><code class="docutils literal notranslate"><span class="pre">OutputImage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="src.utils.html#src.utils.schema.OutputImage.image"><code class="docutils literal notranslate"><span class="pre">OutputImage.image</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="src.utils.html#module-src.utils">Module contents</a></li>
 </ul>
 </li>
@@ -100,18 +120,18 @@
 </div>
 </section>
 <section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 </section>
 <section id="module-src.app">
-<span id="src-app-module"></span><h2>src.app module<a class="headerlink" href="#module-src.app" title="Permalink to this headline"></a></h2>
+<span id="src-app-module"></span><h2>src.app module<a class="headerlink" href="#module-src.app" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="src.app.improve_image">
-<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.app.</span></span><span class="sig-name descname"><span class="pre">improve_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">fastapi.datastructures.UploadFile</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">File(Ellipsis)</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/app.html#improve_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.app.improve_image" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.app.</span></span><span class="sig-name descname"><span class="pre">improve_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UploadFile</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">File(Ellipsis)</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/app.html#improve_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.app.improve_image" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>
 <section id="module-src">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src" title="Permalink to this headline"></a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src" title="Permalink to this heading"></a></h2>
 <p>Top-level package for blackboard_photo2cleanimage.</p>
 </section>
 </section>
