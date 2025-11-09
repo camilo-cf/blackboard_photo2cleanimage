@@ -1,4 +1,4 @@
-FROM ubuntu:rolling
+FROM ubuntu:23.10
 COPY . /app 
 WORKDIR /app
 ARG DEBIAN_FRONTEND=noninteractive
